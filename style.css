@@ -2,5 +2,9 @@
 <html>
 <title>CSS Stylesheet</title>
 
+h1 {
+  font-size: 36px;
+  color: #33485e;
+}
 
 </html>
