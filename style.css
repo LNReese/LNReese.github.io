@@ -4,3 +4,10 @@ h1 {
   font-size: 36px;
   color: #33485e;
 }
+
+body {
+  font-size: 400px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
