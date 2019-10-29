@@ -45,9 +45,25 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  border: 1px solid #FFF;
+  border: 2px solid #FFF;
   padding: 10px 10px 20px;
   border-radius: 30px;
+}
+
+.scroll-bar span {
+  border: 2px solid #FFF;
+  font: 10px;
+  border-radius: 30px;
+}
+
+.scroll-bar {
+  animation: mover 1s infinite alternate;
+
+}
+
+@@keyframes mover {
+  0%{transform:translateY(0);}
+  100%{transform:translateY(10px);}
 }
 
 img {
