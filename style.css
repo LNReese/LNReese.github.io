@@ -1,17 +1,54 @@
 /*font-family: 'Merriweather', serif;
 font-family: 'Roboto', sans-serif;*/
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+}
+
+/*------------header CSS-------------------*/
+
+#header {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(img/DSC_0593.JPG);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.user-box {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+
+.user-box img {
+  border-radius: 50%;
+  width: 250px;
+  border: 2px solid #2b6622;
+}
+
+.user-box h1 {
+  color: #fff;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.user-box p {
+  color: #fff;
+  
+}
+
 img {
     max-width: 600px;
     width: 100%;
 }
 
-body {
-  max-width: 800px; /*defines how big you want the text to be no matter the browser size*/
-  margin: 20 auto; /*text align is NOT what we want. text align does not center the entire container. we want it to center only the container*/
-  /*20= top and bottom margins. auto= left and right*/
-  font-family: 'Merriweather', serif;
-}
+
+
+
 
 .center-top-content {
   margin-top: 0;
