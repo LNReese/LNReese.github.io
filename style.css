@@ -1,89 +1,104 @@
-h1 {
-  font-size: 36px;
-  color: #33485e;
+/*font-family: 'Merriweather', serif;
+font-family: 'Roboto', sans-serif;*/
+
+img {
+    max-width: 600px;
+    width: 100%;
 }
 
 body {
-  font-size: 30px;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  max-width: 800px; /*defines how big you want the text to be no matter the browser size*/
+  margin: 20 auto; /*text align is NOT what we want. text align does not center the entire container. we want it to center only the container*/
+  /*20= top and bottom margins. auto= left and right*/
   font-family: 'Merriweather', serif;
 }
 
 .center-top-content {
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 20px; /*controls spacing between div and photo*/
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
   text-align: center;
-  margin-bottom: none;
-  border-style: none none solid none;
-  border-color: #33485e;
-  text-align: center;
-  list-style-type: none;
-  display: inline;
-  padding: 0px;
+  border-bottom: 1px solid grey;
 }
 
-h6 {
-  text-align: center;
-  color: #A89F9F;
+.personal-title {
+  font-weight: bold;
+  color: grey;
   font-style: italic;
 }
 
-.main-content {
-  width: 80%;
-  text-align: center;
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;
 }
 
-.introduction {
-  line-height: 40px
-}
-
-img {
-  float: right;
-  width: 33%;
-}
-
-.highlight {
-  background-color: #33485e;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #FFFFFF;
-  font-weight: bold;
+h1 {
+    color: #33485e;
+    margin-bottom: 0;
 }
 
 h2 {
   background-color: #33485e;
-  color: #FFFFFF;
   padding: 5px;
-  font-family: 'Open Sans', sans-serif;
+  color: white;
 }
 
-h3 {
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-h4 {
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 5px;
-  margin-bottom: 5px;
+h4, h5 {
+  font-weight: 400px;
 }
 
 h5 {
   font-style: italic;
-  font-family: 'Open Sans', sans-serif;
+}
+
+.container-experience h2, .container-experience h3, .container-experience h4,
+.container-experience h5 {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-p .container-experience {
-  font-size: 14px;
+#nav-links {           /*use id to select specific tag when it is used more than once. id=UNIQUE to ONE element*/
+  max-width: 400px;
+  margin: 0 auto 20px;     /*top right bottom left OR top/bottom left/right*/
+  padding-left: 0;
 }
 
-ul {
-  list-style-type: inherit;
+#nav-links li {
+  display: inline-block; /*removes bullets and puts on same line*/
+}
+
+#nav-links > li:not(:last-child)::after{
+  content:"|";                            /*adds "|" between links instead of bullets*/
+  margin; 0.25em;
+}
+
+.main-content {
+  width: 80%;   /* % make it more adaptive with the page*/
+  margin: 0 auto;
+}
+
+.introduction {
+  line-height: 1.8;
+  overflow: auto;
+}
+
+.introduction img {
+  float: right;
+  width: 40%;
+  margin-top: 16px;
+  margin-left: 20%;
+  margin-bottom: 20px;
+}
+
+.highlight {        /*added class to css before html so it can be used anywhere class is used */
+  background-color: #33485e;
+  padding: 3px 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.school {
+  font-style: italic;
 }
