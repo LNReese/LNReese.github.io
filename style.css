@@ -77,6 +77,8 @@ h5 {
 .main-content {
   width: 80%;   /* % make it more adaptive with the page*/
   margin: 0 auto;
+  flex: 30%;
+  padding:inherit;
 }
 
 .introduction {
@@ -101,4 +103,34 @@ h5 {
 
 .school {
   font-style: italic;
+}
+
+/* Change color on hover */
+#nav-links a:hover {
+  color: black;
+}
+
+/*column container*/
+.main-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.introduction {
+  flex: 30%;
+  padding:inherit;
+}
+
+.container-content {
+  flex: 70%;
+  padding: inherit;
+}
+
+
+/*media query- when screen is less than 700px, two
+columns will stack on top of eachother instead of next to each other*/
+@media (max-width: 700px) {
+  .row, #nav-links {
+    flex-direction: column;
+  }
 }
