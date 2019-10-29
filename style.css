@@ -116,16 +116,17 @@ h5 {
   flex-wrap: wrap;
 }
 
+/*small column*/
 .introduction {
   flex: 30%;
   padding:inherit;
 }
 
+/*big column*/
 .container-content {
   flex: 70%;
   padding: inherit;
 }
-
 
 /*media query- when screen is less than 700px, two
 columns will stack on top of eachother instead of next to each other*/
