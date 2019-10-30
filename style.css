@@ -115,6 +115,9 @@ img {
   background-color: #f7f5f5;
 }
 
+.container-box {
+  background-color: #FFF;
+}
 .resume h2 {
   margin-bottom: 50px;
 }
