@@ -109,6 +109,17 @@ img {
   color: #FFF !important;
 }
 
+.resume {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-color: #e6dfdf;
+}
+
+.resume h2 {
+  margin-bottom: 50px;
+  
+}
+
 .center-top-content {
   margin-top: 0;
   margin-bottom: 20px; /*controls spacing between div and photo*/
