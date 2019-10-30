@@ -81,7 +81,20 @@ img {
   height: 400px;
 }
 
+.nav-bar {
+  top: 0;
+  position: sticky;
+  z-index: 2;
+}
 
+.navbar {
+  background: #000;
+}
+
+.nav-bar .fa-bars {
+  color: #FFF;
+  font-size: 35px;
+}
 
 .center-top-content {
   margin-top: 0;
