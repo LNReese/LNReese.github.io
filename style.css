@@ -100,6 +100,14 @@ img {
   outline: none !important;
 }
 
+.navbar-nav {
+  float:right;
+  text-align: right;
+}
+
+.nav-link {
+  color: #FFF !important;
+}
 
 .center-top-content {
   margin-top: 0;
@@ -141,8 +149,8 @@ h5 {
   font-style: italic;
 }
 
-.container-experience h2, .container-experience h3, .container-experience h4,
-.container-experience h5 {
+.resume h2, .resume h3, .resume h4,
+.resume h5 {
   margin-top: 5px;
   margin-bottom: 5px;
 }
