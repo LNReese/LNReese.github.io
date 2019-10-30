@@ -106,18 +106,17 @@ img {
 }
 
 .nav-link {
-  color: #FFF !important;
+  color: #000 !important;
 }
 
 .resume {
   padding-top: 50px;
   padding-bottom: 30px;
-  background-color: #e6dfdf;
+  background-color: #f7f5f5;
 }
 
 .resume h2 {
   margin-bottom: 50px;
-  
 }
 
 .center-top-content {
